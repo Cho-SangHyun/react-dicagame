@@ -1,0 +1,23 @@
+.Board{
+    display: inline-block;
+    background-color: #272b38;
+    padding: 35px 30px;
+    border-radius: 0.75rem;
+    text-align: center;
+    width: 20%;
+    margin: 10px;
+}
+
+.Board-heading{
+    color: #888d9d;
+    font-size: 1.2rem;
+    margin: 45px auto 15px;
+}
+
+.Board-heading:first-child{
+    margin-top: 0;
+}
+
+.Board p{
+    font-weight: 100;
+}

@@ -1,5 +1,6 @@
 import Board from "./Board";
 import Button from "./Button";
+import GameLogo from "./GameLogo";
 import { useState } from "react";
 import './App.css';
 
@@ -28,11 +29,12 @@ function App(){
    
     return (
         <div className="App">
-            <div>
+            <GameLogo />
+            <div className='btn-section'>
                 <Button className="App-button" onClick={handleRollClick} color="blue">던지기</Button>
                 <Button className="App-button" color="red" onClick={handleClearClick}>처음부터</Button>
             </div>
-            <div>
+            <div className="Boards">
                 <Board name="나" color="blue" gameHistory={myHistory}/>
                 <Board name="상대" color="red" gameHistory={otherHistory}/>
             </div>
